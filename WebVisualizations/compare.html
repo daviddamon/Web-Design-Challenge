@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>City Latitude vs. Wind Speed</title>
+    <title>Comparisom</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -20,62 +20,57 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
     <div class="wrapper">
+        
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Web Design Challenge</h3>
+                <h1>Latitude</h1>
             </div>
 
             <ul class="list-unstyled components">
-                <p>Weather Analysis</p>
-                
-                <li class="active">
-                    <a href="#">Home</a>
+                <li class="dropdown-toggle">
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Weather Data Graphs</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Weather Data Plots</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">City Latitude vs. Maximum Temperature</a>
+                            <a href="visualizations/temp.html">City Latitude vs. Maximum Temperature><br>
+                                <img src="assets/images/Fig_Temp.png" alt="Temperature Figure" style="width:200px;">
+                            </a>
                         </li>
                         <li>
-                            <a href="#">City Latitude vs. Humidity</a>
+                            <a href="visualizations/humid.html">City Latitude vs. Humidity<br>
+                                <img src="assets/images/Fig_Hum.png" alt="Humidity Figure" style="width:200px;">
+                            </a>
                         </li>
                         <li>
-                            <a href="#">City Latitude vs. Cloudiness</a>
+                            <a href="visualizations/cloud.html">City Latitude vs. Cloudiness<br>
+                                <img src="assets/images/Fig_Cloud.png" alt="Cloud Figure" style="width:200px;">
+                            </a>
                         </li>
                         <li>
-                            <a href="#">City Latitude vs. Wind Speed</a>
+                            <a href="visualizations/wind.html">City Latitude vs. Wind Speed<br>
+                                <img src="assets/images/Fig_Wind.png" alt="Wind Figure" style="width:200px;">
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Graph Comparison</a>
+                    <a href="compare.html">Plot Comparison</a>
                 </li>
                 <li>
-                    <a href="#">Data Tables</a>
-                </li>
-                <li>
-                    <a href="#">Project Information</a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                    <a href="table.html">Data Table</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Page Content  -->
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
@@ -92,51 +87,69 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li><div class="nav-item dropright">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Graphs
+                                    Plots
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Maximum Temperature</a>
-                                  <a class="dropdown-item" href="#">Humidity</a>
-                                  <a class="dropdown-item" href="#">Cloudiness</a>
-                                  <a class="dropdown-item" href="#">Wind Speed</a>
+                                  <a class="dropdown-item" href="visualizations/temp.html">Maximum Temperature</a>
+                                  <a class="dropdown-item" href="visualizations/humid.html">Humidity</a>
+                                  <a class="dropdown-item" href="visualizations/cloud.html">Cloudiness</a>
+                                  <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
                                 </div>
+                            </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Chart Comparison</a>
+                                <a class="nav-link" href="compare.html">Comparison</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Data Tables</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="table.html">Data</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            
+            <header>
+                <h1 style="color: #3f56af;">Comparison - Latitude vs. X</h1>
+            </header>
+            <br>
 
-            <h1>City Latitude vs. Wind Speed</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Click any plot below for an in-depth analysis.</p>
+            <br>
+            <br>
 
-            <div class="line"></div>
+            <div class="container">
+                <div class="row row-cols-2">
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="col">
+                        <h2 style="text-align:center; color: #3f56af;">vs. Max Temperature</h2>
+                        <a href="visualizations/temp.html">
+                            <img src="assets/images/Fig_Temp.png" alt="Temperature Figure" style="width:500px"></a>
+                    </div>
 
-            <div class="line"></div>
+                    <div class="col">
+                        <h2 style="text-align:center; color: #3f56af;">vs. Humidity</h2>
+                        <a href="visualizations/humid.html">
+                            <img src="assets/images/Fig_Hum.png" alt="Humidity Figure" style="width:500px"></a>
+                    </div>
+                    
+                    <div class="col">
+                        <h2 style="text-align:center; color: #3f56af; margin-top: 15%;">vs. Cloudiness</h2>
+                        <a href="visualizations/cloud.html">
+                            <img src="assets/images/Fig_Cloud.png" alt="Cloud Figure" style="width:500px"></a>
+                    </div>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="col">
+                        <h2 style="text-align:center; color: #3f56af; margin-top: 15%;">vs. Wind Speed</h2>
+                        <a href="visualizations/wind.html">
+                            <img src="assets/images/Fig_Wind.png" alt="Wind Figure" style="width:500px"></a>
+                    </div>
 
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
         </div>
     </div>
 

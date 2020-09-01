@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>City Latitude vs. Humidity</title>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="../assets/style.css">
+    
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+   <!-- Font Awesome JS -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <div class="wrapper">
+        
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+         <div class="sidebar-header">
+            <h1>Latitude</h1>
+         </div>
+
+         <ul class="list-unstyled components">
+            <li>
+               <a href="../index.html">Home</a>
+            </li>
+            <li>
+               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Weather Data Plots</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu">
+                     <li>
+                        <a href="../visualizations/temp.html">City Latitude vs. Maximum Temperature><br>
+                           <img src="../assets/images/Fig_Temp.png" alt="Temperature Figure" style="width:200px;">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="humid.html">City Latitude vs. Humidity<br>
+                           <img src="../assets/images/Fig_Hum.png" alt="Humidity Figure" style="width:200px;">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="../visualizations/cloud.html">City Latitude vs. Cloudiness<br>
+                           <img src="../assets/images/Fig_Cloud.png" alt="Cloud Figure" style="width:200px;">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="../visualizations/wind.html">City Latitude vs. Wind Speed<br>
+                           <img src="../assets/images/Fig_Wind.png" alt="Wind Figure" style="width:200px;">
+                        </a>
+                     </li>
+                  </ul>
+            </li>
+            <li>
+               <a href="../compare.html">Plot Comparison</a>
+            </li>
+            <li>
+               <a href="../table.html">Data Table</a>
+            </li>
+         </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+               <!-- Sidebar Toggle Button  -->
+               <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Toggle Sidebar</span>
+               </button>
+               <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+               </button>
+
+               <!-- NavBar  -->
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                     </li>
+                     <li><div class="nav-item dropright">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="../visualizations/temp.html">Maximum Temperature</a>
+                           <a class="dropdown-item" href="humid.html">Humidity</a>
+                           <a class="dropdown-item" href="../visualizations/cloud.html">Cloudiness</a>
+                           <a class="dropdown-item" href="../visualizations/wind.html">Wind Speed</a>
+                           </div>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="../compare.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="../table.html">Data</a>
+                        </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+            
+         <header>
+               <h1 style="color: #3f56af;">Humidity</h1>
+         </header>
+         <br>
+
+         <img src="../assets/images/Fig_Hum.png" class="figure-img img-fluid rounded" alt="Humidity Figure" style="width:1200px">
+         <br>
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         
+      </div>
+   </div>
+
+   <!-- jQuery CDN - Slim version (=without AJAX) -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <!-- Popper.JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+   <!-- Bootstrap JS -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+   <!-- jQuery Custom Scroller CDN -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+         });
+
+         $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+         });
+      });
+   </script>
+</body>
+
+</html>

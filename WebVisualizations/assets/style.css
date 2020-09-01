@@ -1,6 +1,3 @@
-/*
-    DEMO STYLE
-*/
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
@@ -13,7 +10,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: rgb(99, 99, 99);
 }
 
 a,
@@ -62,7 +59,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #3f56af;
     color: #fff;
     transition: all 0.3s;
 }
@@ -73,7 +70,9 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #262e52;
+    text-align:center;
+    color: #adf75a;
 }
 
 #sidebar ul.components {
@@ -156,6 +155,7 @@ a.article:hover {
     position: absolute;
     top: 0;
     right: 0;
+    float: left;
 }
 
 #content.active {
